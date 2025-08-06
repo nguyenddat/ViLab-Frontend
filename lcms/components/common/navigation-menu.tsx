@@ -2,11 +2,12 @@
 
 import * as React from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import { Navigation, Menu, Search, User } from "lucide-react";
+import { Menu, Search, User } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 import logo from "@/assets/logo.png"
 import { ThemeToggle } from "@/components/ui/theme-toggle";
+import Image from "next/image";
 
 const navItems = [
   { name: "Trang chủ", href: "#" },
@@ -15,7 +16,7 @@ const navItems = [
   { name: "Liên hệ", href: "#" },
 ];
 
-const EXPAND_SCROLL_THRESHOLD = 80;
+const EXPAND_SCROLL_THRESHOLD = 100;
 
 const containerVariants = {
   expanded: {
@@ -26,10 +27,10 @@ const containerVariants = {
     maxWidth: "72rem",
     transition: {
       type: "spring" as const,
-      damping: 25,
+      damping: 50,
       stiffness: 400,
       staggerChildren: 0.05,
-      delayChildren: 0.1,
+      delayChildren: 0.03,
     },
   },
   collapsed: {
@@ -40,7 +41,7 @@ const containerVariants = {
     maxWidth: "3.5rem",
     transition: {
       type: "spring" as const,
-      damping: 25,
+      damping: 50,
       stiffness: 400,
       when: "afterChildren",
       staggerChildren: 0.03,
@@ -58,7 +59,7 @@ const logoVariants = {
       type: "spring" as const, 
       damping: 20, 
       stiffness: 300,
-      delay: 0.1
+      delay: 0.2
     } 
   },
   collapsed: { 
@@ -207,7 +208,7 @@ export function AnimatedNavFramer() {
             variants={logoVariants}
             className="flex-shrink-0 flex items-center"
           >
-            <img src={logo.src} alt="Logo" className="h-8 w-8 object-contain" />
+            <Image src={logo} alt="Logo" className="h-8 w-8 object-contain" />
           </motion.div>
           
           <motion.div

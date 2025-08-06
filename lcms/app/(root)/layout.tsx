@@ -1,5 +1,6 @@
 import { Github, Twitter } from "lucide-react"
 import logo from "@/assets/logo.png";
+import Image from "next/image";
 
 import { Footer } from "@/components/ui/footer";
 import { AnimatedNavFramer } from "@/components/common/navigation-menu";
@@ -14,7 +15,7 @@ export default function RootLayout({
             <AnimatedNavFramer />
             {children}
             <Footer 
-            logo={<img src={logo.src} alt="Logo" className="h-10 w-10 object-contain" />} 
+            logo={<Image src={logo} alt="Logo" className="h-10 w-10 object-contain" />} 
             brandName="ViLab" 
             socialLinks={[
                 {
