@@ -111,7 +111,7 @@ export function ClientsSection() {
 
     if (loading) {
         return (
-            <div className="w-full py-12 lg:py-20 bg-background/40 backdrop-blur-sm">
+            <div className="w-full py-12 lg:py-16">
                 <div className="container mx-auto px-4">
                                     <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tighter">
@@ -130,7 +130,7 @@ export function ClientsSection() {
     }
 
     return (
-        <div className="w-full py-12 lg:py-20 bg-background/40 backdrop-blur-sm">
+        <div className="w-full py-12 lg:py-16">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tighter">

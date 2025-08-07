@@ -1,0 +1,1 @@
+export const EXPAND_SCROLL_THRESHOLD = 100;

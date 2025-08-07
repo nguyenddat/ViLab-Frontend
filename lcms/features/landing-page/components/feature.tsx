@@ -90,7 +90,7 @@ const Feature108 = ({
   };
 
   return (
-    <section className="relative z-10">
+    <section className="relative z-10 py-8">
       <div className="container mx-auto relative">
         <div className="flex flex-col items-center gap-4 text-center">
           <h1 className="max-w-2xl text-3xl font-semibold md:text-4xl">
