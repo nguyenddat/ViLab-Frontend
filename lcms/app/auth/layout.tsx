@@ -1,8 +1,3 @@
-import { Github, Twitter } from "lucide-react"
-import logo from "@/assets/logo.png";
-import Image from "next/image";
-
-import { Footer } from "@/components/ui/footer";
 import { AnimatedNavFramer } from "@/components/common/navigation-menu";
 
 export default function RootLayout({
